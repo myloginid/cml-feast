@@ -1,0 +1,17 @@
+offline_store:
+  spark_conf:
+    spark.eventLog.enabled: 'false'
+    spark.hadoop.fs.s2a.s3guard.ddb.region: us-east-1
+    spark.kerberos.access.hadoopFileSystems: s3a://go01-demo/
+    spark.sql.catalogImplementation: hive
+    spark.sql.parser.quotedRegexColumnNames: 'true'
+    spark.sql.session.timeZone: UTC
+    spark.sql.warehouse.dir: s3a://go01-demo/data/warehouse/tablespace/managed/hive
+    spark.ui.enabled: 'false'
+  type: spark
+online_store:
+  path: /home/cdsw/feast_repo/online_store.db
+  type: sqlite
+project: feast_project
+provider: local
+registry: /home/cdsw/feast_repo/registry.db
