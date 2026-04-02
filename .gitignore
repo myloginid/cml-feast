@@ -5,3 +5,4 @@ __pycache__
 .*
 !.gitignore
 !.experiments
+go01-demo-aws-manishm.keytab
