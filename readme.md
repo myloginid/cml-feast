@@ -1,6 +1,8 @@
 # Feast Feature Management (Spark + HMS)
 - Deploy Feast feature management for batch features using Spark in Cloudera AI (see https://feast.dev/).
 
+<img width="1198" height="1583" alt="image" src="https://github.com/user-attachments/assets/dabf6e2e-c074-48ad-9cea-cd25ebcad02d" />
+
 
 ## Environment snapshot
 
@@ -41,6 +43,8 @@
 - Treat `feast_repo/` as the canonical source. Teams can branch/PR updates to `feature_defs.py`, run `feast apply` from a shared workspace or CI job, and then refresh the shared UI to surface the new FeatureViews.
 - Everyone sees the same catalog once the registry is updated; the UI caches metadata so changes only appear after restarting the server (or re-launching `feast ui`).
 - Individuals can prototype safely by running their own repo copy and `feast apply`; these isolated runs do not impact the shared registry.
+
+<img width="3235" height="1735" alt="image" src="https://github.com/user-attachments/assets/b23c554b-997f-42bd-ace3-8729aba9d22e" />
 
 
 ## Interactive-like experimentation
